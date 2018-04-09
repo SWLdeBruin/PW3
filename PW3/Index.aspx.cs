@@ -18,15 +18,5 @@ namespace PW3
         {
             Response.WriteFile("Include/IndexSjoerd.aspx");
         }
-
-        public void RenderJasper()
-        {
-            Response.WriteFile("Include/IndexJasper.aspx");
-        }
-
-        public void RenderFooter()
-        {
-            Response.WriteFile("Include/IndexFooter.aspx");
-        }
     }
 }
