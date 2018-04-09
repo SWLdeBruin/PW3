@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -17,6 +16,12 @@ namespace PW3
         public void RenderSjoerd()
         {
             Response.WriteFile("Include/IndexSjoerd.aspx");
+        }
+
+        public void WriteResults()
+        {
+            Response.Write(Request.Form["txtOpdrachtnummer"] + "<br />");
+            Response.Write(Request.Form["txtBanden"] + "<br />");
         }
     }
 }
