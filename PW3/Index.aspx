@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="PW3.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="PW3.Index" %>
 
 <!DOCTYPE html>
 
@@ -8,6 +8,10 @@
     </head>
 
     <body>
+        <% RenderSjoerd(); %>
 
+        <% RenderJasper(); %>
+
+        <% RenderFooter(); %>
     </body>
 </html>
