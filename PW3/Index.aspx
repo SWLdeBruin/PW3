@@ -20,8 +20,25 @@
                     <input type="number" name="txtOpdrachtnummer" id="txtOpdrachtnummer" />
                 </div>
                 <div class="form-group">
-                    <label for="txtBanden">Banden</label>
-                    <input type="text" name="txtBanden" id="txtBanden" style="margin-left: 73px;" />
+                    <label class="form-check-label"></label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="rbOpgesteld" id="rbOpgesteld1" value="Banden" checked />
+                      <label class="form-check-label" for="exampleRadios1">
+                        Banden
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="rbOpgesteld" id="rbOpgesteld2" value="Stempels" />
+                      <label class="form-check-label" for="exampleRadios2">
+                        Stempels
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="rbOpgesteld" id="rbOpgesteld3" value="Rupsen" />
+                      <label class="form-check-label" for="exampleRadios3">
+                        Rupsen
+                      </label>
+                    </div>
                 </div>
                 <button type="submit">Exit</button>
             </form>
