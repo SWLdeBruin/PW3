@@ -12,21 +12,5 @@ namespace PW3
         {
          
         }
-
-        public void RenderSjoerd()
-        {
-            Response.WriteFile("Include/IndexSjoerd.aspx");
-        }
-
-        public void WriteResults()
-        {
-            Response.Write(Request.Form["txtOpdrachtnummer"] + "<br />");
-            Response.Write(Request.Form["txtBanden"] + "<br />");
-        }
-
-        public void RenderFooter()
-        {
-            Response.WriteFile("Include/IndexFooter.aspx");
-        }
     }
 }

@@ -68,8 +68,6 @@
   <ItemGroup>
     <Content Include="CSS\Styles.css" />
     <Content Include="Images\logo.png" />
-    <Content Include="Include\IndexFooter.aspx" />
-    <Content Include="Include\IndexSjoerd.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -83,13 +81,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Include\IndexFooter.aspx.cs">
-      <DependentUpon>IndexFooter.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Include\IndexFooter.aspx.designer.cs">
-      <DependentUpon>IndexFooter.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,7 +90,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Include\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
