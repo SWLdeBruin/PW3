@@ -132,6 +132,21 @@
                             <label style="margin-left: 139px;" for="txtAfwijking">Afwijking in %: </label>
                             <input type="text" name="txtAfwijking" id="txtAfwijking" /> t
                         </div>
+                        <div class="form-group">
+                            <label style="margin-left: 175px;" class="form-check-label"><b>Akkoord:</b></label>
+                            <div style="margin-left: 185px;" class="form-check">
+                              <input class="form-check-input" type="radio" name="rbAkkoord" id="rbAkkoord1" value="Ja" checked />
+                              <label class="form-check-label" for="rbAkkoord">
+                                Ja
+                              </label>
+                            </div>
+                            <div style="margin-left: 185px;" class="form-check">
+                              <input class="form-check-input" type="radio" name="rbAkkoord" id="rbAkkoord2" value="Nee" />
+                              <label class="form-check-label" for="rbAkkoord">
+                                Nee
+                              </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <button type="submit">Exit</button>
