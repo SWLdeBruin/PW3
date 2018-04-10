@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <% //RenderSjoerd(); %>
+        <% RenderSjoerd(); %>
 
         <div class="container">
             <form method="post" action="Index.aspx" runat="server">
