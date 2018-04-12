@@ -19,11 +19,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:10px;">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="Index.aspx">Bestanden</a>
+                <a class="nav-link" href="Index.aspx">Index</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="http://www.google.nl">Info</a>
+                <a class="nav-link" href="Keuring.aspx">Keuring</a>
               </li>
+            </ul>
           </div>
         </nav>
 
