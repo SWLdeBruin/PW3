@@ -184,14 +184,12 @@
                               <label class="form-check-label" for="Stempels">
                                 Stempels
                               </label>
-                              <input type="text" name="txtStempels" id="txtStempels" style="margin-left:11px;" />
                             </div>
                             <div class="form-check" style="margin-top:5px;">
                               <input class="form-check-input" type="radio" name="rbStempels" id="Dozerblad" value="Dozerblad" />
                               <label class="form-check-label" for="Dozerblad">
                                 Dozerblad
                               </label>
-                              <input type="text" name="txtDozerblad" id="txtDozerblad" />
                             </div>
                         </div>
                     </div>
@@ -214,7 +212,7 @@
                     </div>
                     <div class="col-5">
                         <label class="form-check-label"><b>Afmelden voor:</b></label>
-                        <input type="text" name="txtAfmelden" id="txtAfmelden" />
+                        <input type="text" name="txtAfmelden" id="txtAfmelden" placeholder="yyyy-mm-dd" />
                     </div>
                 </div>
                 <div class="row">

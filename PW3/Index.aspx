@@ -40,7 +40,7 @@
                         <div class="form-group">
                             <label class="form-check-label"><b>Opgesteld Op:</b></label>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="rbOpgesteld" id="rbOpgesteld1" value="Banden" checked />
+                              <input class="form-check-input" type="radio" name="rbOpgesteld" id="rbOpgesteld1" value="Banden" />
                               <label class="form-check-label" for="rbOpgesteld1">
                                 Banden
                               </label>
@@ -121,7 +121,7 @@
                             <input type="text" name="txtLMBIntreden" id="txtLMBIntreden" />
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-6">
                         <div class="form-group">
                             <label style="margin-left: 154px;"><b>Beproeving: </b></label><br />
 
@@ -136,7 +136,7 @@
                         <div class="form-group">
                             <label style="margin-left: 175px;" class="form-check-label"><b>Akkoord:</b></label>
                             <div style="margin-left: 185px;" class="form-check">
-                              <input class="form-check-input" type="radio" name="rbAkkoord" id="rbAkkoord1" value="Ja" checked />
+                              <input class="form-check-input" type="radio" name="rbAkkoord" id="rbAkkoord1" value="Ja" />
                               <label class="form-check-label" for="rbAkkoord">
                                 Ja
                               </label>
