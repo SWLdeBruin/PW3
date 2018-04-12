@@ -10,6 +10,6 @@
 namespace PW3 {
     
     
-    public partial class Index {
+    public partial class Keuring {
     }
 }
