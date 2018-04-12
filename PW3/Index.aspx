@@ -24,6 +24,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="http://www.google.nl">Info</a>
               </li>
+            </ul>
           </div>
         </nav>
 
@@ -80,7 +81,7 @@
                         </div>
                     </div>
                     <div class="col-5">
-                        <div class="form-group">
+                        <div class ="form-group">
                             <label style="margin-left: 103px;"><b>Giekhoek: </b></label><br />
 
                             <label style="margin-left: 99px;" for="txtHoofdgiekHoek">Hoofdgiek: </label>
@@ -161,5 +162,6 @@
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <% FormHandling(); %>
     </body>
 </html>
