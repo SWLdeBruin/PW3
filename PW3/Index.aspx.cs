@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -94,52 +93,52 @@ namespace PW3
                 if (GetPostVariable("rbAkkoord") == "Ja")
                 {
                     akkoord = true;
-                } else
+                }else
                 {
                     Response.Write("<script>document.getElementById('rbAkkoord').style.color = 'red';</script>");
                     akkoord = false;
                 }
 
-                //try
-                //{
-                string server = "localhost";
-                string database = "hijstesten";
-                string uid = "root";
-                string password = "";
-                string connectionString;
-                connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-                database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+                try
+                {
+                    string server = "localhost";
+                    string database = "hijstesten";
+                    string uid = "root";
+                    string password = "";
+                    string connectionString;
+                    connectionString = "SERVER=" + server + ";" + "DATABASE=" +
+                    database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-                MySqlConnection con = new MySqlConnection(connectionString);
+                    MySqlConnection con = new MySqlConnection(connectionString);
 
-                con.Open();
+                    con.Open();
 
-                string query = "INSERT INTO `hijstesten 2`(Opdrachtennummer, Datum_Opgesteld, Hoofdgiek_Lengte, Mech_Sectie_Gieklengte, Hulpgiek_Lengte, Hoofdgiek_Giekhoek, Hulpgiek_Giekhoek, Hijskabel_Aantal_Parten, Zwenkhoek, Eigen_Massa_Ballast, Toelaatbare_Bedrijfslast, LMB_In_Werking, Proeflast, Akkoord) VALUES(@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)";
-                Response.Write(query);
-                MySqlCommand cmd = new MySqlCommand(query, con);
+                    string query = "INSERT INTO `hijstesten 2`(Opdrachtennummer, Datum_Opgesteld, Hoofdgiek_Lengte, Mech_Sectie_Gieklengte, Hulpgiek_Lengte, Hoofdgiek_Giekhoek, Hulpgiek_Giekhoek, Hijskabel_Aantal_Parten, Zwenkhoek, Eigen_Massa_Ballast, Toelaatbare_Bedrijfslast, LMB_In_Werking, Proeflast, Akkoord) VALUES(@0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11, @12, @13)";
+                    Response.Write(query);
+                    MySqlCommand cmd = new MySqlCommand(query, con);
 
-                cmd.Parameters.Add(new MySqlParameter("0", opdrachtNummer));
-                cmd.Parameters.Add(new MySqlParameter("1", datumOpgesteld));
-                cmd.Parameters.Add(new MySqlParameter("2", hoofdGiekLengte));
-                cmd.Parameters.Add(new MySqlParameter("3", mechSectieLengte));
-                cmd.Parameters.Add(new MySqlParameter("4", hulpGiekLengte));
-                cmd.Parameters.Add(new MySqlParameter("5", hoofdGiek_GiekHoek));
-                cmd.Parameters.Add(new MySqlParameter("6", hulpGiek_GiekHoek));
-                cmd.Parameters.Add(new MySqlParameter("7", hijskabelAantalParten));
-                cmd.Parameters.Add(new MySqlParameter("8", zwenkHoek));
-                cmd.Parameters.Add(new MySqlParameter("9", eigenMassaBallast));
-                cmd.Parameters.Add(new MySqlParameter("10", toelaatbareBedrijfsLast));
-                cmd.Parameters.Add(new MySqlParameter("11", lmbInWerking));
-                cmd.Parameters.Add(new MySqlParameter("12", proefLast));
-                cmd.Parameters.Add(new MySqlParameter("13", akkoord));
+                    cmd.Parameters.Add(new MySqlParameter("0", opdrachtNummer));
+                    cmd.Parameters.Add(new MySqlParameter("1", datumOpgesteld));
+                    cmd.Parameters.Add(new MySqlParameter("2", hoofdGiekLengte));
+                    cmd.Parameters.Add(new MySqlParameter("3", mechSectieLengte));
+                    cmd.Parameters.Add(new MySqlParameter("4", hulpGiekLengte));
+                    cmd.Parameters.Add(new MySqlParameter("5", hoofdGiek_GiekHoek));
+                    cmd.Parameters.Add(new MySqlParameter("6", hulpGiek_GiekHoek));
+                    cmd.Parameters.Add(new MySqlParameter("7", hijskabelAantalParten));
+                    cmd.Parameters.Add(new MySqlParameter("8", zwenkHoek));
+                    cmd.Parameters.Add(new MySqlParameter("9", eigenMassaBallast));
+                    cmd.Parameters.Add(new MySqlParameter("10", toelaatbareBedrijfsLast));
+                    cmd.Parameters.Add(new MySqlParameter("11", lmbInWerking));
+                    cmd.Parameters.Add(new MySqlParameter("12", proefLast));
+                    cmd.Parameters.Add(new MySqlParameter("13", akkoord));
 
-                cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
 
-                con.Close();
-                /*} catch
+                    con.Close();
+                } catch
                 {
 
-                }*/
+                }
             }
         }
 
