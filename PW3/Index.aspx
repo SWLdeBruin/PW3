@@ -19,10 +19,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left:10px;">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="Index.aspx">Index</a>
+                <a class="nav-link" href="Index.aspx">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Keuring.aspx">Keuring</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Kabels.aspx">Keuring</a>
               </li>
             </ul>
           </div>
@@ -40,7 +43,7 @@
                         <div class="form-group">
                             <label class="form-check-label"><b>Opgesteld Op:</b></label>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="rbOpgesteld" id="rbOpgesteld1" value="Banden" />
+                              <input class="form-check-input" type="radio" name="rbOpgesteld" id="rbOpgesteld1" value="Banden" checked />
                               <label class="form-check-label" for="rbOpgesteld1">
                                 Banden
                               </label>
@@ -81,7 +84,7 @@
                         </div>
                     </div>
                     <div class="col-5">
-                        <div class="form-group">
+                        <div class ="form-group">
                             <label style="margin-left: 103px;"><b>Giekhoek: </b></label><br />
 
                             <label style="margin-left: 99px;" for="txtHoofdgiekHoek">Hoofdgiek: </label>
@@ -121,7 +124,7 @@
                             <input type="text" name="txtLMBIntreden" id="txtLMBIntreden" />
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-5">
                         <div class="form-group">
                             <label style="margin-left: 154px;"><b>Beproeving: </b></label><br />
 
@@ -136,7 +139,7 @@
                         <div class="form-group">
                             <label style="margin-left: 175px;" class="form-check-label"><b>Akkoord:</b></label>
                             <div style="margin-left: 185px;" class="form-check">
-                              <input class="form-check-input" type="radio" name="rbAkkoord" id="rbAkkoord1" value="Ja" />
+                              <input class="form-check-input" type="radio" name="rbAkkoord" id="rbAkkoord1" value="Ja" checked />
                               <label class="form-check-label" for="rbAkkoord">
                                 Ja
                               </label>
@@ -162,5 +165,6 @@
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <% FormHandling(); %>
     </body>
 </html>

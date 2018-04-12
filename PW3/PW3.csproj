@@ -48,6 +48,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -69,8 +70,13 @@
     <Content Include="CSS\Styles.css" />
     <Content Include="Images\logo.png" />
     <Content Include="Index.aspx" />
+    <Content Include="Kabels.aspx" />
     <Content Include="Keuring.aspx" />
     <Content Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -79,6 +85,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="test.php" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +96,13 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Kabels.aspx.cs">
+      <DependentUpon>Kabels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kabels.aspx.designer.cs">
+      <DependentUpon>Kabels.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Keuring.aspx.cs">
       <DependentUpon>Keuring.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -97,8 +111,15 @@
       <DependentUpon>Keuring.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Include\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
